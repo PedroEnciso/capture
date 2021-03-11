@@ -1,4 +1,6 @@
 import React from "react";
+// components
+import Toggle from "../components/Toggle";
 // styles
 import { About, Description, Hide, Image } from "../styles";
 import styled from "styled-components";
@@ -11,13 +13,15 @@ const FaqSection = () => {
       </h2>
       <div className="question">
         <h4>How do I start?</h4>
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
-            quod.
-          </p>
-        </div>
+        <Toggle>
+          <div className="answer">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Provident, quod.
+            </p>
+          </div>
+        </Toggle>
         <div className="faq-line"></div>
       </div>
       <div className="question">
